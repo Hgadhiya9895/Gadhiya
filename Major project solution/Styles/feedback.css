@@ -1,0 +1,217 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #C0C0C0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 1000px;
+    margin: 0 auto;
+	border: 3px solid #000000;
+    background-color: #C0C0C0;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #fbff07;
+	background-color: #C0C0C0;
+	}
+header h2 {
+	font-size: 175%;
+	color: #ff5151;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #1800cb;
+}
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+legend {
+    font-weight: bold;
+    font-size: 85%;
+    padding-bottom: .5em;
+}
+
+
+input, select {
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] input:invalid {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+
+#radio input {
+	
+	margin-left: 1px;
+}
+#exp_month {
+	width: 7em;
+}
+#exp_year {
+	width: 5em;
+}
+#buttons input {
+	width: 10em;
+}
+
+/* the styles for the navigation menu */
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 333px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #1a00ae;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+	color: yellow;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+	color: yellow;
+}
+ 
+#nav_menu ul ul ul {
+    display: none;
+    position: absolute;
+    top: 163px;
+    left:100% 
+}
+
+#nav_menu ul ul ul li {
+	float: none;
+}
+
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+section {
+	width: 45%;
+	float: right;
+	padding: 20px 20px 20px 20px;
+	border-left: 3px solid #000ead;
+	border-right: 3px solid #000ead;
+}
+section h1 {
+	font-size: 150%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+/* the styles for the aside */
+.asideleft{
+    width: 250px;
+	float: right;
+	padding: 20px 0 0 20px;
+}
+.asideRight {
+	width: 170px;
+	float: right;
+	padding: 0 0 20px 20px;
+}
+
+img{
+	width: 80px;
+	height: 80px;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #ff0000;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+#main {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+  }
+
+
+.submit {background-color: #ff0000;} /* Green */
+.clear {background-color: #1900ff;} /* Blue */
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Yeh Jawaani Hai Deewani</title>
+	<link rel="shortcut icon" href="../images/Gryfindor.jpg">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="../Styles/feedback.css">
+</head>
+
+<body>
+	<header>
+		<!-- https://i.pinimg.com/originals/a1/bf/0a/a1bf0a96a8d25df94e22a1219582f7f7.jpg -->
+		<img src="../images/Header image.jpg" alt="YJHD logo" height="80">
+		<h2>Yeh Jawaani Hai Deewani</h2>
+		<h3>A film by Dharma Production</h3>
+	</header>
+
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../Page/table.html">Team ></a>
+				<ul>
+					<li><a href="#">Producer</a></li>
+                	<li><a href="#">Director</a></li>
+                	<li><a href="#">Script writer</a></li>
+					<li><a href="#">Actors/Actoress ></a>
+						<ul>
+							<li><a href="#">Ranbir Kapoor</a></li>
+							<li><a href="#">Deepika Padukon</a></li>
+							<li><a href="#">Aditya Roy Kapoor</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="../Page/feedback.html" class="current">Feedback</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<aside class="asideleft">
+			<b>
+				<p>My Website is: </p>
+			</b><br>
+			<form>
+			<div id="checkboxes">
+				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+				<label for="vehicle1"> Colourful and attractive</label><br>
+				<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+				<label for="vehicle2"> Well Organised</label><br>
+				<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+				<label for="vehicle3"> Will my website need some changes</label><br><br>
+			</div>
+
+			<p>Is this website helpful?</p>
+				<input  type="radio" id="yes" name="yes" value="yes">
+				<label for="yes">Yes</label>
+				<input type="radio" id="no" name="no" value="no">
+				<label for="no">No</label>
+
+			<br>
+			<button id="main" class="submit" type="submit" onclick="submitFuction()"> Submit </button>
+			</form>
+
+		</aside>
+		<section>
+
+			<form>
+
+				<label for="firstname">Name:</label>
+				<input placeholder=" name" type="text" name="name" id="name" />
+
+				<br>
+				<label for="team">Choose a one of the following:</label>
+				<select name="team" id="team">
+					<optgroup label="Actors/Actoress">
+						<option value="x">Spot Light Boy</option>
+						<option value="y">Flim crew</option>
+						<option value="z">Flim Editor</option>
+					</optgroup>
+					<optgroup label="Creators">
+						<option value="c">Producers</option>
+						<option value="b">Directors<ption>
+						<option value="a">Script writer </option>
+					</optgroup>
+				</select>
+
+				<br>
+
+				<label for="cars">Choose a Character:</label>
+				<select name="cars" id="cars" multiple>
+					<option value="volvo">Rnabir Kapoor</option>
+					<option value="saab">Deepika padukon</option>
+					<option value="opel">Aditiya Roy Kapoor</option>
+				</select>
+
+				<br><br>
+				<textarea rows="7" cols="50">Description
+			</textarea>
+
+				<br><br>
+
+				<div class="row">
+					<button id="main" class="submit" type="submit" onclick="submitFuction()"> Submit </button>
+					<button id="main" class="clear" type="reset" onclick="clearFunction()"> Clear </button>
+				</div>
+
+			</form>
+
+			<script>
+				function submitFuction() {
+					alert("The form has been submitted");
+				}
+				function clearFunction() {
+					alert("The form has been reset successfully");
+				}
+			</script>
+
+
+
+		</section>
+
+		<aside class="asideRight">
+
+			<h2>Our Actors/Actoress</h2>
+			<h3><a href="../index.html">Ranbir Kapoor</a></h3>
+			<img src="../images/Ranbir kapoor.jpg" alt="Ranbir kapoor photo">
+			<h3><a href="../Page/table.html">Deepika padukon</a></h3>
+			<img src="../images/Deepika.jpg" alt="Deepika padukoon photo">
+			<h3><a href="../Page/feedback.html">Aditya Roy Kapoor</a></h3>
+			<img src="../images/Aditya.jpg" alt="Aditya Roy Kapoor photo">
+
+		</aside>
+
+	</main>
+	<footer>
+		<p>&copy; 2021 Yeh Jawaani Hai Deewani</p>
+	</footer>
+</body>
+
+</html>
